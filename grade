@@ -1,0 +1,17 @@
+function getGrade() {
+    let input = prompt("Enter student marks (0-100):");
+    let marks = parseFloat(input);
+    
+    if (marks >= 0 && marks <= 100) {
+      if (marks > 79) return "A";
+      if (marks >= 60) return "B";
+      if (marks >= 50) return "C";
+      if (marks >= 40) return "D";
+      if (marks < 40) return "E";
+    } else {
+      return "Invalid input";
+    }
+  }
+  
+  let grade = getGrade();
+  console.log(" YOU GRADE IS: " + grade);
